@@ -91,11 +91,11 @@ const routes = [
     props: true
   },
   {
-        path: '/login',
-        name: 'Login',
-        component: Login
-      },
-    
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
+
   {
     path: '/:catchAll(.*)',
     name: 'NotFound',
