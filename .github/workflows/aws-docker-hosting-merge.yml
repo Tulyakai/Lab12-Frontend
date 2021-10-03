@@ -28,7 +28,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: tulyakai/331-lab06:latest
+          tags: tulyakai/331-lab12:latest
       - 
         name: prepare the docker-compose run
         run: |
