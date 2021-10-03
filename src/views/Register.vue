@@ -101,13 +101,14 @@ export default {
       // this.successful = false
       // this.loading = true
 
-     this.GStore.flashMessage = 'You are successfully registered for ' + user.username
+     
+      AuthService.register(user)
+        .then((response) => {
+          this.GStore.flashMessage = 'You are successfully registered for ' + user.username
           setTimeout(() => {
           // After 3 seconds remove it
             this.GStore.flashMessage = ''
           }, 3000)
-      AuthService.register(user)
-        .then((response) => {
           console.log(response)
           
           this.$router.push({ name: 'Login' })
