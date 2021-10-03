@@ -1,5 +1,6 @@
 <template>
   <div class="col-md-12">
+  {{GStore.flashMessage}}
     <div class="card card-container">
       <img
         id="profile-img"
@@ -44,6 +45,7 @@ import AuthService from '@/services/AuthService.js'
 import * as yup from 'yup'
 export default {
   name: 'Login',
+  inject: ['GStore'],
   components: {
     Form,
     Field,

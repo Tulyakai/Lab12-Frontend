@@ -6,6 +6,8 @@ import EventRegister from '@/views/event/Register.vue'
 import EventEdit from '@/views/event/Edit.vue'
 import EventLayout from '@/views/event/Layout.vue'
 import NotFound from '@/views/NotFound.vue'
+import Register from '@/views/Register.vue'
+
 import AddEvent from '@/views/EventForm.vue'
 import NetWorkError from '@/views/NetworkError.vue'
 import Login from '@/views/LoginForm.vue'
@@ -105,6 +107,11 @@ const routes = [
     path: '/network-error',
     name: 'NetworkError',
     component: NetWorkError
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: Register
   }
 ]
 
